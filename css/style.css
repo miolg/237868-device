@@ -1,0 +1,22 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: lighter;
+	color: black;
+	letter-spacing: 0.01em;
+}
+
+h1 {
+	font-family: "Gilroy", sans-serif;
+	font-size: 47px;
+	line-height: 120%;
+	font-weight: bolder;
+}
+
+h2 {
+	font-family: "Gilroy", sans-serif;
+	font-size: 17px;
+	line-height: 120%;
+	font-weight: bolder;
+}
