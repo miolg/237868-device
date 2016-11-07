@@ -7,12 +7,16 @@
 	<body>
 		<header class="main-header">
 			<div class="container">
-				<a class="header-top" href="#">
-				  <img src="img/header-logo.png" alt="Device">
-				</a>
+        <div class="header-top">
+          <a href="#">
+            <img src="img/header-logo.png" alt="Device">
+          </a>
+				</div>
 				<div class="header-middle">
 					<div class="header-search">
-					  <input type="text" placeholder="Поиск по сайту">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="text" placeholder="Поиск по сайту">
+					  </form>
 					</div>
 					<div class="user-block">
 						<a class="header-login" href="#">Войти</a>
@@ -23,11 +27,43 @@
 					</div>
 				</div>
 				<div class="header-bottom">
-					<div class="header-catalog">
-						<a href="#">Каталог товаров</a>
-					</div>
 					<nav class="header-menu">
 						<ul>
+							<li>
+                <a href="#">Каталог товаров</a>
+                <ul class="header-catalog-list">
+                  <li>
+                    <ul>
+                      <li>
+                        <a href="#">Виртуальная реальность</a>
+                      </li>
+                      <li>
+                        <a href="#">Моноподы для селфи</a>
+                      </li>
+                      <li>
+                        <a href="#">Экшн-камеры</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>
+                        <a href="#">Фитнесс-браслеты</a>
+                      </li>
+                      <li>
+                        <a href="#">Умные часы</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>
+                        <a href="#">Квадрокоптеры</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
 							<li>
 							  <a href="#">Доставка</a>
 							</li>
@@ -36,38 +72,6 @@
 							</li>
 							<li>
 							  <a href="#">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="header-catalog-list">
-					<nav class="header-catalog-list-left">
-						<ul>
-							<li>
-								<a href="#">Виртуальная реальность</a>
-							</li>
-							<li>
-								<a href="#">Моноподы для селфи</a>
-							</li>
-							<li>
-								<a href="#">Экшн-камеры</a>
-							</li>
-						</ul>
-					</nav>
-					<nav class="header-catalog-list-center">
-						<ul>
-							<li>
-								<a href="#">Фитнесс-браслеты</a>
-							</li>
-							<li>
-								<a href="#">Умные часы</a>
-							</li>
-						</ul>
-					</nav>
-					<nav class="header-catalog-list-right">
-						<ul>
-							<li>
-								<a href="#">Квадрокоптеры</a>
 							</li>
 						</ul>
 					</nav>
@@ -180,44 +184,56 @@
           </div> -->
         </div>
 
-        <section class="main-catalog-list">
-          <a class="main-catalog-item" href="#">
-            <div class="main-catalog-item-icon main-catalog-item-icon-reality"></div>
-            <div class="main-catalog-item-name">
-              Виртуальная реальноть
-            </div>
-          </a>
-          <a class="main-catalog-item" href="#">
-            <div class="main-catalog-item-icon main-catalog-item-icon-monopod"></div>
-            <div class="main-catalog-item-name">
-              Моноподы для селфи
-            </div>
-          </a>
-          <a class="main-catalog-item" href="#">
-            <div class="main-catalog-item-icon main-catalog-item-icon-camera"></div>
-            <div class="main-catalog-item-name">
+        <ul class="main-catalog-list">
+          <li>
+            <a class="main-catalog-item" href="#">
+              <div class="main-catalog-item-icon main-catalog-item-icon-reality"></div>
+              <div class="main-catalog-item-name">
+                Виртуальная реальность
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="main-catalog-item" href="#">
+              <div class="main-catalog-item-icon main-catalog-item-icon-monopod"></div>
+              <div class="main-catalog-item-name">
+                Моноподы для селфи
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="main-catalog-item" href="#">
+              <div class="main-catalog-item-icon main-catalog-item-icon-camera"></div>
+            </a>
+            <a class="main-catalog-item-name" href="#">
               Экшн-камеры
-            </div>
-          </a>
-          <a class="main-catalog-item" href="#">
-            <div class="main-catalog-item-icon main-catalog-item-icon-bracelet"></div>
-            <div class="main-catalog-item-name">
+            </a>
+          </li>
+          <li>
+            <a class="main-catalog-item" href="#">
+              <div class="main-catalog-item-icon main-catalog-item-icon-bracelet"></div>
+            </a>
+            <a class="main-catalog-item-name" href="#">
               Фитнесс браслеты
-            </div>
-          </a>
-          <a class="main-catalog-item" href="#">
-            <div class="main-catalog-item-icon main-catalog-item-icon-watch"></div>
-            <div class="main-catalog-item-name">
+            </a>
+          </li>
+          <li>
+            <a class="main-catalog-item" href="#">
+              <div class="main-catalog-item-icon main-catalog-item-icon-watch"></div>
+            </a>
+            <a class="main-catalog-item-name" href="#">
               Умные часы
-            </div>
-          </a>
-          <a class="main-catalog-item" href="#">
-            <div class="main-catalog-item-icon main-catalog-item-icon-copter"></div>
-            <div class="main-catalog-item-name">
+            </a>
+          </li>
+          <li>
+            <a class="main-catalog-item" href="#">
+              <div class="main-catalog-item-icon main-catalog-item-icon-copter"></div>
+            </a>
+            <a class="main-catalog-item-name" href="#">
               Квадрокоптеры
-            </div>
-          </a>
-        </section>
+            </a>
+          </li>
+        </ul>
 			</div>
 			<section class="services">
         <nav class="services-menu">
@@ -243,42 +259,46 @@
 
 			<div class="container">
         <section class="brands-list">
-          <img src="img/dji.png" alt="DJI">
-          <img src="img/spg.png" alt="SP Gadgets">
-          <img src="img/gopro.png" alt="GoPro">
-          <img src="img/vive.png" alt="Vive">
+          <div class="container">
+            <img src="img/dji.png" alt="DJI">
+            <img src="img/spg.png" alt="SP Gadgets">
+            <img src="img/gopro.png" alt="GoPro">
+            <img src="img/vive.png" alt="Vive">
+          </div>
         </section>
 
-        <div class="about-us">
-          <div class="bottom-line"></div>
-          <h2>О нас</h2>
-          <p>
-            Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-          </p>
-          <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями
-          </p>
-          <ul class="delivety-companies">
-            <li>
-              Деловые линии
-            </li>
-            <li>
-              Автотрейдинг
-            </li>
-            <li>
-              ЖелДорЭкспедиция
-            </li>
-          </ul>
-          <a class="btn" href="#">Подробнее о нас</a>
-        </div>
-        <div class="contacts">
-          <div class="bottom-line"></div>
-          <h2>Контакты</h2>
-          <p>
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-          </p>
-          <img src="img/map" alt="Карта">
-          <a class="btn" href="#">Напишите нам</a>
+        <div class="additional-info">
+          <div class="container">
+            <div class="about-us">
+              <h2>О нас</h2>
+              <p>
+                Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+              </p>
+              <p>
+                Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями
+              </p>
+              <ul class="delivery-companies">
+                <li>
+                  Деловые линии
+                </li>
+                <li>
+                  Автотрейдинг
+                </li>
+                <li>
+                  ЖелДорЭкспедиция
+                </li>
+              </ul>
+              <a class="btn" href="#">Подробнее о нас</a>
+            </div>
+            <div class="contacts">
+              <h2>Контакты</h2>
+              <p>
+                Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+              </p>
+              <img src="img/map" alt="Карта">
+              <a class="btn" href="#">Напишите нам</a>
+            </div>
+          </div>
         </div>
 			</div>
 		</main>
