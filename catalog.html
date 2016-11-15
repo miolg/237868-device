@@ -7,13 +7,11 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="container">
-        <div class="header-top">
-          <a href="#">
-            <img src="img/header-logo.svg" alt="Device">
-          </a>
-				</div>
-				<div class="header-middle">
+			<div class="header-container clearfix">
+        <a href="#" class="header-top">
+          <img src="img/header-logo.svg" alt="Device">
+        </a>
+				<div class="header-middle clearfix">
 					<div class="header-search">
             <form action="https://echo.htmlacademy.ru" method="post">
               <input type="text" placeholder="Поиск по сайту">
@@ -97,10 +95,8 @@
             </li>
           </ul>
         </div>
-			</div>
-			<div class="main-content">
-        <aside class="filter">
-          <div class="container">
+  			<div class="main-content clearfix">
+          <aside class="filter">
             <h2>Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="filter-cost">
@@ -131,11 +127,9 @@
               </fieldset>
               <button type="submit">Показать</button>
             </form>
-          </div>
-        </aside>
-        <div class="catalog">
-          <div class="sort">
-            <div class="container">
+          </aside>
+          <div class="catalog">
+            <div class="sort">
               <h2>Сортировка:</h2>
               <ul>
                 <li>По цене</li>
@@ -147,8 +141,6 @@
                 <div class="sort-desc"></div>
               </div>
             </div>
-          </div>
-          <div class="container">
             <div class="catalog-items-list">
               <article class="catalog-item">
                 <a class="catalog-item-image" href="#">
@@ -162,8 +154,8 @@
                     <a href="#">500 руб.</a>
                   </p>
                 </div>
-              </article>
-              <article class="catalog-item">
+              </article><!--
+              --><article class="catalog-item">
                 <a class="catalog-item-image" href="#">
                   <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 </a>
@@ -175,8 +167,8 @@
                     <a href="#">1 500 руб.</a>
                   </p>
                 </div>
-              </article>
-              <article class="catalog-item">
+              </article><!--
+              --><article class="catalog-item">
                 <a class="catalog-item-image" href="#">
                   <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 </a>
@@ -188,8 +180,8 @@
                     <a href="#">2 500 руб.</a>
                   </p>
                 </div>
-              </article>
-              <article class="catalog-item">
+              </article><!--
+              --><article class="catalog-item">
                 <a class="catalog-item-image" href="#">
                   <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </a>
@@ -202,21 +194,21 @@
                   </p>
                 </div>
               </article>
-            </div>
-            <div class="catalog-pages-list">
-              <a class="catalog-pages-back" href="#">Назад</a>
-              <a href="#" class="active">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a class="catalog-pages-forward" href="#">Вперед</a>
+              <div class="catalog-pages-list">
+                <a class="catalog-pages-back" href="#">Назад</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a class="catalog-pages-forward" href="#">Вперед</a>
+              </div>
             </div>
           </div>
-        </div>
-			</div>
+  			</div>
+      </div>
 		</main>
 		<footer class="main-footer">
 			<div class="container">
-			  <div class="footer-top">
+			  <div class="footer-top clearfix">
 			    <a class="footer-logo" href="#">
 			    	<img src="img/footer-logo.svg" alt="Device">
 			    </a>
@@ -226,7 +218,7 @@
 						<a class="footer-cart" href="#">Корзина</a>
 					</div>
 			  </div>
-			  <div class="footer-middle">
+			  <div class="footer-middle clearfix">
 			  	<div class="footer-address">
 			  		<p>г.Москва, ул.Строителей, 15</p>
 					</div>
@@ -247,7 +239,7 @@
 						<p>Тел.: +7(495)405-95-95</p>
 					</div>
 				</div>
-				<div class="footer-bottom">
+				<div class="footer-bottom clearfix">
 					<div class="footer-line"></div>
 					<div class="footer-social">
 	          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
