@@ -3,14 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="header-container clearfix">
-        <a href="#" class="header-top">
-          <img src="img/header-logo.svg" alt="Device">
-        </a>
+        <div class="header-top">
+          <a href="" class="header-logo">Device</a>
+        </div>
 				<div class="header-middle clearfix">
 					<div class="header-search">
             <form action="https://echo.htmlacademy.ru" method="post">
@@ -25,159 +26,159 @@
 						<a class="header-cart" href="#">Корзина</a>
 					</div>
 				</div>
-				<div class="header-bottom">
-					<nav class="header-menu">
-						<ul>
-							<li>
-                <a href="#">Каталог товаров <span class="folding-menu"></span></a>
-                <ul class="header-sub-menu">
-                  <li>
-                    <ul>
-                      <li>
-                        <a href="#">Виртуальная реальность</a>
-                      </li>
-                      <li>
-                        <a href="#">Моноподы для селфи</a>
-                      </li>
-                      <li>
-                        <a href="#">Экшн-камеры</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>
-                        <a href="#">Фитнесс-браслеты</a>
-                      </li>
-                      <li>
-                        <a href="#">Умные часы</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul>
-                      <li>
-                        <a href="#">Квадрокоптеры</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-							<li>
-							  <a href="#">Доставка</a>
-							</li>
-							<li>
-							  <a href="#">Гарантия</a>
-							</li>
-							<li>
-							  <a href="#">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+				<nav class="header-bottom">
+					<ul class="header-menu">
+						<li>
+              <a href="#">Каталог товаров <span class="folding-menu"></span></a>
+              <ul class="header-sub-menu">
+                <li>
+                  <ul class="header-sub-menu-column">
+                    <li>
+                      <a href="#">Виртуальная реальность</a>
+                    </li>
+                    <li>
+                      <a href="#">Моноподы для селфи</a>
+                    </li>
+                    <li>
+                      <a href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="header-sub-menu-column">
+                    <li>
+                      <a href="#">Фитнесс-браслеты</a>
+                    </li>
+                    <li>
+                      <a href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="header-sub-menu-column">
+                    <li>
+                      <a href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+						<li>
+						  <a href="#">Доставка</a>
+						</li>
+						<li>
+						  <a href="#">Гарантия</a>
+						</li>
+						<li>
+						  <a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		<main>
 			<div class="container">
-        <div class="goods-slider clearfix">
+        <div class="goods-slider">
           <div class="goods-selector">
-            <div class="goods-selector-item active"></div>
-            <div class="goods-selector-item"></div>
-            <div class="goods-selector-item"></div>
+            <i class="active"></i>
+            <i></i>
+            <i></i>
           </div>
-          <div class="goods-slider-item">
-            <figure>
-              <img src="img/slider-1.png" width="384" height="486" alt="Делай селфи, как Бен Стиллер!">
-            </figure>
-            <div class="goods-description">
-              <p>01</p>
-              <h1>Делай селфи,<br>как Бен Стиллер!</h1>
-              <p>
-                Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-              </p>
-              <a class="btn" href="#">Подробнее</a>
-              <div class="goods-characteristics">
-                <div class="goods-characteristics-item">
-                  <div class="goods-characteristics-value">
-                    8,5 м
+          <!-- <div class="goods-slider-list"> -->
+            <div class="goods-slide clearfix">
+              <figure>
+                <img src="img/slider-1.png" width="384" height="486" alt="Делай селфи, как Бен Стиллер!">
+              </figure>
+              <div class="goods-description">
+                <p class="goods-slide-number">01</p>
+                <h1 class="goods-slide-name">Делай селфи,<br>как Бен Стиллер!</h1>
+                <p>
+                  Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                </p>
+                <a class="btn" href="#">Подробнее</a>
+                <div class="goods-characteristics">
+                  <div class="goods-characteristics-item">
+                    <div class="goods-characteristics-value">
+                      8,5 м
+                    </div>
+                    <div class="goods-characteristics-description">
+                      Длина палки
+                    </div>
                   </div>
-                  <div class="goods-characteristics-description">
-                    Длина палки
+                  <div class="goods-characteristics-item">
+                    <div class="goods-characteristics-value">
+                      5 кг
+                    </div>
+                    <div class="goods-characteristics-description">
+                      Вес палки
+                    </div>
                   </div>
-                </div>
-                <div class="goods-characteristics-item">
-                  <div class="goods-characteristics-value">
-                    5 кг
-                  </div>
-                  <div class="goods-characteristics-description">
-                    Вес палки
-                  </div>
-                </div>
-                <div class="goods-characteristics-item">
-                  <div class="goods-characteristics-value">
-                    Карбон
-                  </div>
-                  <div class="goods-characteristics-description">
-                    Материал
+                  <div class="goods-characteristics-item">
+                    <div class="goods-characteristics-value">
+                      Карбон
+                    </div>
+                    <div class="goods-characteristics-description">
+                      Материал
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- <div class="goods-slider-item">
-            <figure>
-              <img src="img/slider-2.png" alt="Худеем правильно!">
-            </figure>
-            <div class="goods-description">
-              <p>02</p>
-              <h1>Худеем<br>правильно!</h1>
-              <p>
-                Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-              </p>
-              <a class="btn" href="#">Подробнее</a>
-              <div class="goods-characteristics">
-                <div class="goods-characteristics-item">
-                  <div class="goods-characteristics-value">
-                    48 часов
-                  </div>
-                  <div class="goods-characteristics-description">
-                    Без подзарядки
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="goods-slider-item">
-            <figure>
-              <img src="img/slider-3.png" alt="Порхает как бабочка, жалит как пчела!">
-            </figure>
-            <div class="goods-description">
-              <p>03</p>
-              <h1>Порхает как бабочка,<br>жалит как пчела!</h1>
-              <p>
-                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-              </p>
-              <a class="btn" href="#">Подробнее</a>
-              <div class="goods-characteristics">
-                <div class="goods-characteristics-item">
-                  <div class="goods-characteristics-value">
-                    800 м
-                  </div>
-                  <div class="goods-characteristics-description">
-                    Дальность полета
-                  </div>
-                </div>
-                <div class="goods-characteristics-item">
-                  <div class="goods-characteristics-value">
-                    50 м
-                  </div>
-                  <div class="goods-characteristics-description">
-                    Радиус поражения
+            <!-- <div class="goods-slide">
+              <figure>
+                <img src="img/slider-2.png" alt="Худеем правильно!">
+              </figure>
+              <div class="goods-description">
+                <p>02</p>
+                <h1>Худеем<br>правильно!</h1>
+                <p>
+                  Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                </p>
+                <a class="btn" href="#">Подробнее</a>
+                <div class="goods-characteristics">
+                  <div class="goods-characteristics-item">
+                    <div class="goods-characteristics-value">
+                      48 часов
+                    </div>
+                    <div class="goods-characteristics-description">
+                      Без подзарядки
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div> -->
+            <div class="goods-slide">
+              <figure>
+                <img src="img/slider-3.png" alt="Порхает как бабочка, жалит как пчела!">
+              </figure>
+              <div class="goods-description">
+                <p>03</p>
+                <h1>Порхает как бабочка,<br>жалит как пчела!</h1>
+                <p>
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a class="btn" href="#">Подробнее</a>
+                <div class="goods-characteristics">
+                  <div class="goods-characteristics-item">
+                    <div class="goods-characteristics-value">
+                      800 м
+                    </div>
+                    <div class="goods-characteristics-description">
+                      Дальность полета
+                    </div>
+                  </div>
+                  <div class="goods-characteristics-item">
+                    <div class="goods-characteristics-value">
+                      50 м
+                    </div>
+                    <div class="goods-characteristics-description">
+                      Радиус поражения
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          <!-- </div> -->
         </div>
 
         <ul class="main-catalog-list">
