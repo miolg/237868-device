@@ -471,9 +471,20 @@ h2 {
 	float: right;
 	width: 500px;
 	margin: 0;
+	margin-top: 20px;
+	margin-right: 12px;
 	padding-top: 45px;
 }
 
+.goods-description h1 {
+	margin-bottom: 18px;
+}
+
+
+.btn {
+
+	
+}
 
 ./** main catalog **/ 
 
