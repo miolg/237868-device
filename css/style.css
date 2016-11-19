@@ -139,6 +139,7 @@ h3 a {
 	display: inline-block;
 	text-decoration: none;
 	color: #000000;
+	vertical-align: top;
 }
 
 .header-search {
@@ -165,6 +166,7 @@ h3 a {
 
 .user-block a {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .header-login {
@@ -252,13 +254,16 @@ h3 a {
 }
 
 .header-menu > li {
-	position: relative;
     display: inline-block;
+    vertical-align: top;
+    text-align: center;
     padding-top: 40px;
-    padding-left: 40px;
+    padding-left: 23px;
+    padding-right: 10px;
 }
 
 .header-menu > li:first-child {
+	position: relative;
     float: left;
     padding-left: 0;
 }
@@ -267,6 +272,7 @@ h3 a {
     float: right;
     padding-left: 100px;
     padding-right: 0px;
+    margin-right: -5px;
 }
 
 .header-menu > li > a {
@@ -312,13 +318,14 @@ h3 a {
 	background-color: #ffe393;
 	width: 1040px;
 	text-align: left;
+	vertical-align: top;
 }
 
 .header-sub-menu > li {
 	display: inline-block;
 	width: 200px;
 	margin-right: -4px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 	vertical-align: top;
 }
 
@@ -355,9 +362,8 @@ h3 a {
 }
 
 .footer-top {
-	padding: 0 20px;
-	padding-top: 40px;
-	margin-bottom: 40px;
+	padding-top: 55px;
+	margin-bottom: 5px;
 }
 
 .logo-footer {
@@ -371,13 +377,18 @@ h3 a {
 	float: right;
 	width: 360px;
 	text-align: right;
+	margin-top: 10px;
 }
 
 .footer-actions a {
 	padding-left: 40px;
-	padding-right: 20px;
+	padding-right: 10px;
 	color: #ffffff;
 	text-decoration: none;
+}
+
+.footer-actions a:last-child {
+	margin-right: 0;
 }
 
 .footer-login,
@@ -435,7 +446,6 @@ h3 a {
 }
 
 .footer-middle {
-	padding: 0px 20px;
 	margin-bottom: 40px;
 }
 
@@ -458,8 +468,9 @@ h3 a {
 .footer-menu li {
 	position: relative;
     display: inline-block;
-    padding-top: 40px;
-    padding-left: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    vertical-align: middle;
 }
 
 .footer-menu li:first-child {
@@ -512,15 +523,15 @@ h3 a {
 
 .goods-slider {
 	position: relative;
- 	margin-bottom: 90px;
+ 	margin-bottom: 82px;
 }
 
 .goods-selector {
 	position: absolute;
-	right: 65px;
-	bottom: 150px;
+    right: 80px;
+    bottom: 163px;
 	z-index: 1000;
-	text-align: center;
+	text-align: left;
 }
 
 .goods-selector i {
@@ -528,12 +539,13 @@ h3 a {
 	width: 4px;
 	height: 4px;
 	padding: 0;
-	margin-right: 23px;
+	margin-right: 20px;
 	border: 3px solid #000000;
 	opacity: 0.3;
 	vertical-align: top;
 	border-radius: 50%;
 	cursor: pointer;
+	vertical-align: middle;
 }
 
 .goods-selector i:last-child {
@@ -554,7 +566,7 @@ h3 a {
 
 .goods-slide {
 	position: relative;
-	margin-top: -125px;
+	margin-top: -115px;
 	padding: 0 50px;
 	width: 1060px;
 	overflow: hidden;
@@ -576,9 +588,10 @@ h3 a {
 }
 
 .goods-description h1 {
-	margin-bottom: 18px;
-	box-shadow: 
-		-50px -80px 0 -53px #ffffff;
+    margin-bottom: 18px;
+    margin-top: 15px;
+    padding-top: 16px;
+    box-shadow: -55px -85px 0 -60px #ffffff;
 }
 
 .goods-description p {
@@ -602,22 +615,38 @@ h3 a {
 }
 
 .goods-characteristics {
-	margin-top: 58px;
-	text-align: justify;
-	width:460px;
+    margin-top: 58px;
+    text-align: left;
+    width: 460px;
+    margin-left: 2px;
+    font-size: 0;
 }
 
 .goods-characteristics-item {
-	display: inline-block;
-	width: 140px;
+    display: inline-block;
+    width: 140px;
+    vertical-align: middle;
+}
+
+.goods-characteristics-item:first-child {
+    margin-right: 20px;
 }
 
 .goods-characteristics-value {
 	font-family: "Gilroy light", "Arial Black", sans-serif;
 	font-size: 36px;
 	line-height: 120%;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.01em;
 	padding: 0;
+	margin-bottom: 10px;
+}
+
+.goods-characteristics-description {
+	font-family: "Open Sans light", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	color: #444444;
+	letter-spacing: 0.01em;
 }
 
 .btn {
@@ -634,39 +663,52 @@ h3 a {
 	cursor: pointer;
 }
 
-/*.btn::after {
-	content:"";
-	width: 100%;
-	position: absolute;
-	box-shadow: 
-		inset 5px 0 0 17px #ffc600,
-		inset -5px 0 0 17px #ffc600;
-}*/
+.btn::after {
+    content: "";
+    width: 95%;
+    position: absolute;
+    top: 21px;
+    left: 7px;
+    z-index: -10;
+    box-shadow: 0 0 0 4px #ffc600;
+}
 
 .btn:hover {
-	box-shadow: none;
+	background-color: #ffc600;
 }
 
 .btn:active {
-	box-shadow: none;
 	opacity: 0.3;  /*!!!*/
 }
 
-./** main catalog **/ 
+.btn:hover::after,
+.btn:active::after {
+	box-shadow: none;
+}
+
+/** main catalog **/ 
 
 .main-catalog-list {
+	padding: 0;
+	margin: 0;
 	vertical-align: top;
+	width: 1160px;
 }
 
 .main-catalog-list li {
 	display: inline-block;
 	width: 160px;
 	margin-top: 0px;
-	margin-right: 20px;
+	margin-right: 40px;
+	vertical-align: top;
 }
 
 .main-catalog-list li:last-child {
-	margin-right: : 0px;
+	margin-right: 0;
+}
+
+.main-catalog-item {
+	text-decoration: none;
 }
 
 .main-catalog-item-icon {
@@ -674,16 +716,15 @@ h3 a {
 	width: 160px;
 	height: 160px;
 	background-color: #ffe27f;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 
 .icon-reality {
 	background: #ffe27f url("../img/popular-1.png") center no-repeat;
 }
 
-
 .icon-monopod {
-	background: #ffe27f url("../img/popular-2.png") center no-repeat;
+	background: #ffe27f url("../img/popular-2.png") bottom no-repeat;
 }
 
 .icon-camera {
@@ -702,11 +743,16 @@ h3 a {
 	background: #ffe27f url("../img/popular-6.png") center no-repeat;
 }
 
-
 .main-catalog-item-name {
-	display: inline-block;
-	padding-right: 62px;
 	min-height: 90px;
+	font-family: "Gilroy extrabold", "Arial Black", sans-serif;
+	font-size: 18px;
+	color: #000000;
+	line-height: 120%;
+	letter-spacing: 0.01em;
+	text-align: left;
+	padding-right: 34px;
+	vertical-align: top;
 }
 
 /** services **/
@@ -714,21 +760,27 @@ h3 a {
 .services {
 	background-color: #e6e6e6;
 	margin-top: 190px;
-	margin-bottom: 90px;
+	margin-bottom: 95px;
+	z-index: -20;
 }
 
 .services-menu {
 	float: left;
 	width: 280px;
-	margin-top: -120px;
+	margin-top: -152px;
+	margin-left: -22px;
 	padding-top: 80px;
 	padding-left: 20px;
-	padding-bottom: 75px;
+	padding-bottom: 70px;
 	border-right: 7px solid #000000;
 }
 
 .services-menu ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
 	list-style: none;
+	font-size: 0;
 }
 
 .services-menu li {
@@ -739,16 +791,29 @@ h3 a {
 	margin-bottom: 0px;
 }
 
-/*.service-btn {
-	box-shadow: 
-		inset 5px 0 0 17px #e6e6e6,
-		inset -5px 0 0 17px #e6e6e6;
+.service-btn {
+	display: inline-block;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 0px;
+	vertical-align: middle;
+	text-align: left;
 }
-*/
+
+.service-btn:hover {
+	color: #ffe27f;
+	background-color: #000000;
+}
+
+.service-btn::after {
+
+}
+
 .services-description {
 	float: right;
 	width: 760px;
 	margin-top: -120px;
+	padding-bottom: 130px;
 }
 
 .service-name {
@@ -756,12 +821,14 @@ h3 a {
 	font-size: 47px;
 	line-height: 120%;
 	letter-spacing: 0.01em;
-	margin-top: 80px;
-	margin-bottom: 40px;
+	margin-top: 37px;
+	margin-bottom: 27px;
+	padding-left: 3px;
 }
 
 .services-description p {
 	width: 460px;
+	padding-left: 3px;
 }
 
 .delivery {
@@ -769,20 +836,24 @@ h3 a {
 }
 .delivery::after {
 	position: absolute;
+	top: 15px;
+	right: 65px;
 	content: "";
-	background: transparent url("../img/delivery.png") no-repeat;
+	width: 136px;
+	height: 164px;
+	background: transparent url("../img/delivery.png") right no-repeat;
 }
 
 /** brands **/
 
 .brands-list {
 	margin-bottom: 100px;
-	background-color: purple;
 }
 
 .brands-list img {
 	display: inline-block;
 	margin-right: 40px;
+	vertical-align: middle;
 }
 
 .brands-list img:last-child {
@@ -792,9 +863,64 @@ h3 a {
 
 /** about us & contacts **/
 
+.additional-info {
+	padding-bottom: 85px;
+}
+
+.additional-info h2 {
+	font-family: "Gilroy extrabold", "Arial Black", sans-serif;
+	font-size: 47px;
+	line-height: 120%;
+	letter-spacing: 0.01em;
+	text-transform: none;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.additional-info p {
+	margin-bottom: 30px;
+	letter-spacing: 0;
+}
+
 .about-us {
 	float: left;
 	width: 460px;
+}
+
+.about-us .btn {
+	padding-right: 22px;
+	padding-left: 22px;
+}
+
+.delivery-companies {
+	margin-top: 35px;
+	margin-bottom: 60px;
+	list-style: none;
+}
+
+.delivery-companies li {
+	position: relative;
+	font-family: "Gilroy extrabold", "Arial Black", sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0;
+	xxmargin-top: 40px;
+	xxmargin-bottom: 40px;
+}
+
+.delivery-companies li::before {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	margin-right: 20px;
+	border: 3px solid #b2b2b2;
+	opacity: 0.3;
+	vertical-align: top;
+	border-radius: 50%;
+	vertical-align: middle;
 }
 
 .contacts {
@@ -802,6 +928,17 @@ h3 a {
 	width: 560px;
 }
 
+.map-link {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 65px;
+}
+
+.contacts .btn {
+	padding-right: 42px;
+	padding-left: 40px;
+}
 
 /** CATALOG **/
 
@@ -828,6 +965,7 @@ h3 a {
 	display: inline-block;
 	width: 360px;
 	margin-right: 40px;
+	vertical-align: middle;
 }
 
 .catalog-item:nth-child(2n) {
